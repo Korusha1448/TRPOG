@@ -14,7 +14,7 @@ class Log extends \core\LogAbstract implements \core\LogInterface {
 		if (!file_exists($pathToLog))
 			mkdir($pathToLog);
 
-		$file = fopen($pathToLog . "/$date.log", "w+");
+		echo $file = fopen($pathToLog . "/$date.log", "w+");
 
 		foreach($this->log as $val) {
 			fwrite($file,  $val . "\n");
