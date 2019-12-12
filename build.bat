@@ -1,6 +1,6 @@
 @echo off
 
-path=H:\git;%path%
+path=H:\bin;%path%
 
 git symbolic-ref --short -q HEAD>version
 

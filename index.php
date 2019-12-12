@@ -16,7 +16,7 @@ $b = $co_arr["b"];
 $c = $co_arr["c"];
 //Korusha\Log::log("Entered numbers: " . implode(", ", $co_arr));
 
-if ($file = fopen("version", "r"))
+if ($file = fopen(__DIR__ . "/version", "r"))
 	Korusha\Log::log("Version: " . fread($file, 100));
 Korusha\Log::log("Equation: $a*x^2 + $b*x + $c = 0");
 try {
